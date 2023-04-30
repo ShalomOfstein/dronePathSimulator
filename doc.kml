@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>droneProject.kmz</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>droneProject</name>
+		<open>1</open>
+		<Placemark>
+			<name>place5</name>
+			<description>the fith place in the map</description>
+			<LookAt>
+				<longitude>35.20540078561758</longitude>
+				<latitude>32.10251585016162</latitude>
+				<altitude>0</altitude>
+				<heading>4.111762067670753</heading>
+				<tilt>0</tilt>
+				<range>1917.975452497913</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>35.20137240651047,32.10551419193057,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>place4</name>
+			<description>the fourth place in the map</description>
+			<LookAt>
+				<longitude>35.20068935493296</longitude>
+				<latitude>32.10338959092935</latitude>
+				<altitude>0</altitude>
+				<heading>4.109258096621153</heading>
+				<tilt>0</tilt>
+				<range>1949.456629241698</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>35.20669940148689,32.10121469589495,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>place3</name>
+			<description>the third place in the map</description>
+			<LookAt>
+				<longitude>35.20540078561758</longitude>
+				<latitude>32.10251585016162</latitude>
+				<altitude>0</altitude>
+				<heading>4.111762067670753</heading>
+				<tilt>0</tilt>
+				<range>1917.975452497913</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>35.20725367943773,32.10651388018697,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>place2</name>
+			<description>the second place in the map</description>
+			<LookAt>
+				<longitude>35.20536410629525</longitude>
+				<latitude>32.1032788023799</latitude>
+				<altitude>0</altitude>
+				<heading>4.111742497702356</heading>
+				<tilt>0</tilt>
+				<range>1930.382948904825</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>35.20956308269901,32.10274390707676,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>place1</name>
+			<description>the first place in the map</description>
+			<LookAt>
+				<longitude>35.20693922714438</longitude>
+				<latitude>32.10318287122294</latitude>
+				<altitude>0</altitude>
+				<heading>4.112579589923622</heading>
+				<tilt>0</tilt>
+				<range>1922.887255277822</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>35.20346084759601,32.10197488595662,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
