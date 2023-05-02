@@ -1,43 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
     <Document id="1">
-        <Style id="15">
-            <LineStyle id="14">
+        <Style id="26">
+            <LineStyle id="25">
                 <color>ff0000ff</color>
                 <colorMode>normal</colorMode>
                 <width>5</width>
             </LineStyle>
         </Style>
         <Placemark id="3">
+            <name>(32.10551419193057, 35.20137240651047, 0.0)</name>
             <Point id="2">
                 <coordinates>35.20137240651047,32.10551419193057,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="5">
+            <name>(32.10121469589495, 35.20669940148689, 0.0)</name>
             <Point id="4">
                 <coordinates>35.20669940148689,32.10121469589495,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="7">
+            <name>(32.10651388018697, 35.20725367943773, 0.0)</name>
             <Point id="6">
                 <coordinates>35.20725367943773,32.10651388018697,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="9">
+            <name>(32.10274390707676, 35.20956308269901, 0.0)</name>
             <Point id="8">
                 <coordinates>35.20956308269901,32.10274390707676,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="11">
+            <name>(32.10197488595662, 35.20346084759601, 0.0)</name>
             <Point id="10">
                 <coordinates>35.20346084759601,32.10197488595662,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="13">
+            <name>(32.10608412848192, 35.20622782436586, 0.0)</name>
+            <Point id="12">
+                <coordinates>35.20622782436586,32.10608412848192,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>(32.10530093874119, 35.20766732174338, 0.0)</name>
+            <Point id="14">
+                <coordinates>35.20766732174338,32.10530093874119,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>(32.10837637689895, 35.20802098837805, 0.0)</name>
+            <Point id="16">
+                <coordinates>35.20802098837805,32.10837637689895,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>(32.10077420780372, 35.2070542637845, 0.0)</name>
+            <Point id="18">
+                <coordinates>35.2070542637845,32.10077420780372,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>(32.10078395442473, 35.20632008978085, 0.0)</name>
+            <Point id="20">
+                <coordinates>35.20632008978085,32.10078395442473,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <gx:Tour>
+            <name>Play me!</name>
+        </gx:Tour>
+        <Placemark id="24">
             <name>Tour Path</name>
-            <styleUrl>#15</styleUrl>
-            <LineString id="12">
-                <coordinates>35.20137240651047,32.10551419193057,0.0 35.20956308269901,32.10274390707676,0.0 35.20725367943773,32.10651388018697,0.0 35.20346084759601,32.10197488595662,0.0 35.20669940148689,32.10121469589495,0.0 35.20137240651047,32.10551419193057,0.0</coordinates>
+            <styleUrl>#26</styleUrl>
+            <LineString id="23">
+                <coordinates>35.20137240651047,32.10551419193057,0.0 35.20622782436586,32.10608412848192,0.0 35.20725367943773,32.10651388018697,0.0 35.20802098837805,32.10837637689895,0.0 35.20766732174338,32.10530093874119,0.0 35.20956308269901,32.10274390707676,0.0 35.20669940148689,32.10121469589495,0.0 35.2070542637845,32.10077420780372,0.0 35.20632008978085,32.10078395442473,0.0 35.20346084759601,32.10197488595662,0.0 35.20137240651047,32.10551419193057,0.0</coordinates>
             </LineString>
         </Placemark>
     </Document>
