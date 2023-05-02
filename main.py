@@ -18,6 +18,90 @@ def get_distance(lat1, lon1, lat2, lon2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return R * c
 
+
+
+
+
+def mykml(points,points1,edges):
+ # Create a KML object
+ kml = simplekml.Kml()
+
+ # Add the nodes to the KML file as placemarks
+ for point in points1:
+     kml.newpoint(name=point, coords=[(point[1], point[0], point[2])])
+
+ # Add the edges to the KML file 
+ linestring = kml.newlinestring(name="Tour Path")
+ linestring.coords=[(point[1], point[0], point[2]) for point in edges]
+ linestring.style.linestyle = simplekml.LineStyle(width=0, color='ff0000ff')
+
+
+ tour = kml.newgxtour(name="Play me!")
+ playlist = tour.newgxplaylist()
+
+ wait = playlist.newgxwait(gxduration=2.4)
+
+ animatedupdate = playlist.newgxanimatedupdate(gxduration=5)
+ animatedupdate.update.change = simplekml.LineStyle(width=5, color='ff0000ff')
+
+ wait = playlist.newgxwait(gxduration=2.4)
+
+ return kml
+
+
+
+def mykml1(points,points1,edges):
+    # Create a KML object
+    kml = simplekml.Kml()
+
+    # Add the nodes to the KML file as placemarks
+    for point in points1:
+        kml.newpoint(name=point, coords=[(point[1], point[0], point[2])])
+
+    # Create a tour and playlist
+    tour = kml.newgxtour(name="Play me!")
+    playlist = tour.newgxplaylist()
+
+    # Add wait time before starting animation
+    playlist.newgxwait(gxduration=2)
+   
+    placemark = kml.newpoint(coords=[(edges[0][1],edges[0][0],edges[0][2])])
+    placemark.altitudemode = simplekml.AltitudeMode.clamptoground
+    placemark.style.iconstyle.icon.href = 'http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png'
+
+    # Add the edges to the KML file 
+    for i, edge in enumerate(edges[:-1]):
+         
+        linestring = kml.newlinestring(name=f"Edge {i}")
+        linestring.coords=[(edges[i][1],edges[i][0],edges[i][2]),(edges[i+1][1],edges[i+1][0],edges[i+1][2])]
+        linestring.style.linestyle = simplekml.LineStyle(width=5, color='ff0000ff')
+        
+        # Create a flyto for each edge
+        flyto = playlist.newgxflyto(gxduration=5)
+        flyto.camera.longitude = (edges[i][1] + edges[i+1][1]) / 2
+        flyto.camera.latitude = (float(edges[i][0]) + float(edges[i+1][0])) / 2
+        flyto.camera.altitude = 500
+        flyto.camera.tilt = 0
+        
+       # Set new coordinates for placemark
+        new_coords = [(edges[i+1][1]),( edges[i+1][0]), (edges[i+1][2])]
+    
+
+        # Create animated update to move placemark
+    
+        animatedupdate = playlist.newgxanimatedupdate(gxduration=2)
+        animatedupdate.update.change = f'<Point targetId="{placemark.id}"><coordinates>{new_coords[0]},{new_coords[1]},{new_coords[2]}</coordinates></Point>'
+
+        # Add wait time before showing next edge
+        playlist.newgxwait(gxduration=2)
+
+    return kml
+
+
+
+
+
+
 # Open the KMZ file and extract the KML file:
 with zipfile.ZipFile('C:\\Users\\shalo\\OneDrive\\Desktop\\all documents\\vs_code\\DroneProject\\droneProject.kmz', 'r') as kmz:
     kml_file = kmz.extract('doc.kml')
@@ -39,8 +123,7 @@ for placemark in doc.Document.Folder.Placemark:
 # create a graph from the points
 G = nx.Graph()
 G.add_nodes_from(points)
-print(points)
-print(G.nodes)
+
 
 # Add edges between all pairs of nodes to create a complete graph
 for u, v in itertools.combinations(points, 2):
@@ -63,31 +146,13 @@ nx.draw_networkx_nodes(G, pos, nodelist=points, node_color='b', node_size=80)
 nx.draw_networkx_labels(G, pos, font_size=8, font_family='sans-serif')
 plt.axis('off')
 
-plt.show()
-
-print("tour:" , edges)
-print("points:" , points)
-
-
-
-
-# Create a KML object
-kml = simplekml.Kml()
-
-
-# Add the nodes to the KML file as placemarks
-for point in points1:
-    
-    kml.newpoint(name=point, coords=[(point[1], point[0], point[2])])
-
-
-tour = kml.newgxtour(name="Play me!")
-
-
-# Add the edges to the KML file 
-linestring = kml.newlinestring(name="Tour Path")
-linestring.coords=[(point[1], point[0], point[2]) for point in edges]
-linestring.style.linestyle = simplekml.LineStyle(width=5, color='ff0000ff')
+# plt.show()
+kml = mykml1(points,points1,edges)
 
 # Save the KML file
 kml.save("output.kml")
+
+
+
+
+

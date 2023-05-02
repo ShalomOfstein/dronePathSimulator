@@ -1,8 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
     <Document id="1">
-        <Style id="26">
-            <LineStyle id="25">
+        <Style id="27">
+            <IconStyle id="28">
+                <colorMode>normal</colorMode>
+                <scale>1</scale>
+                <heading>0</heading>
+                <Icon id="29">
+                    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="33">
+            <LineStyle id="32">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="42">
+            <LineStyle id="41">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="51">
+            <LineStyle id="50">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="60">
+            <LineStyle id="59">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="69">
+            <LineStyle id="68">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="78">
+            <LineStyle id="77">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="87">
+            <LineStyle id="86">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="96">
+            <LineStyle id="95">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="105">
+            <LineStyle id="104">
+                <color>ff0000ff</color>
+                <colorMode>normal</colorMode>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="114">
+            <LineStyle id="113">
                 <color>ff0000ff</color>
                 <colorMode>normal</colorMode>
                 <width>5</width>
@@ -70,12 +143,317 @@
         </Placemark>
         <gx:Tour>
             <name>Play me!</name>
+            <gx:Playlist>
+                <gx:Wait id="24">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="34">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.20380011543817</longitude>
+                        <latitude>32.105799160206246</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="36">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20622782436586,32.10608412848192,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="38">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="43">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.20674075190179</longitude>
+                        <latitude>32.106299004334446</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="45">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20725367943773,32.10651388018697,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="47">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="52">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.20763733390789</longitude>
+                        <latitude>32.10744512854296</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="54">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20802098837805,32.10837637689895,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="56">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="61">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.20784415506071</longitude>
+                        <latitude>32.10683865782007</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="63">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20766732174338,32.10530093874119,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="65">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="70">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.208615202221196</longitude>
+                        <latitude>32.10402242290897</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="72">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20956308269901,32.10274390707676,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="74">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="79">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.208131242092946</longitude>
+                        <latitude>32.101979301485855</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="81">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20669940148689,32.10121469589495,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="83">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="88">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.20687683263569</longitude>
+                        <latitude>32.10099445184933</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="90">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.2070542637845,32.10077420780372,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="92">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="97">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.20668717678268</longitude>
+                        <latitude>32.100779081114226</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="99">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20632008978085,32.10078395442473,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="101">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="106">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.20489046868843</longitude>
+                        <latitude>32.101379420190675</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="108">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20346084759601,32.10197488595662,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="110">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+                <gx:FlyTo id="115">
+                    <gx:duration>5</gx:duration>
+                    <Camera>
+                        <longitude>35.20241662705324</longitude>
+                        <latitude>32.103744538943594</latitude>
+                        <altitude>500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
+                <gx:AnimatedUpdate id="117">
+                    <gx:duration>2</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20137240651047,32.10551419193057,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:Wait id="119">
+                    <gx:duration>2</gx:duration>
+                </gx:Wait>
+            </gx:Playlist>
         </gx:Tour>
-        <Placemark id="24">
-            <name>Tour Path</name>
-            <styleUrl>#26</styleUrl>
-            <LineString id="23">
-                <coordinates>35.20137240651047,32.10551419193057,0.0 35.20622782436586,32.10608412848192,0.0 35.20725367943773,32.10651388018697,0.0 35.20802098837805,32.10837637689895,0.0 35.20766732174338,32.10530093874119,0.0 35.20956308269901,32.10274390707676,0.0 35.20669940148689,32.10121469589495,0.0 35.2070542637845,32.10077420780372,0.0 35.20632008978085,32.10078395442473,0.0 35.20346084759601,32.10197488595662,0.0 35.20137240651047,32.10551419193057,0.0</coordinates>
+        <Placemark id="26">
+            <styleUrl>#27</styleUrl>
+            <Point id="25">
+                <coordinates>35.20137240651047,32.10551419193057,0.0</coordinates>
+                <altitudeMode>clampToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>Edge 0</name>
+            <styleUrl>#33</styleUrl>
+            <LineString id="30">
+                <coordinates>35.20137240651047,32.10551419193057,0.0 35.20622782436586,32.10608412848192,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="40">
+            <name>Edge 1</name>
+            <styleUrl>#42</styleUrl>
+            <LineString id="39">
+                <coordinates>35.20622782436586,32.10608412848192,0.0 35.20725367943773,32.10651388018697,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="49">
+            <name>Edge 2</name>
+            <styleUrl>#51</styleUrl>
+            <LineString id="48">
+                <coordinates>35.20725367943773,32.10651388018697,0.0 35.20802098837805,32.10837637689895,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="58">
+            <name>Edge 3</name>
+            <styleUrl>#60</styleUrl>
+            <LineString id="57">
+                <coordinates>35.20802098837805,32.10837637689895,0.0 35.20766732174338,32.10530093874119,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="67">
+            <name>Edge 4</name>
+            <styleUrl>#69</styleUrl>
+            <LineString id="66">
+                <coordinates>35.20766732174338,32.10530093874119,0.0 35.20956308269901,32.10274390707676,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="76">
+            <name>Edge 5</name>
+            <styleUrl>#78</styleUrl>
+            <LineString id="75">
+                <coordinates>35.20956308269901,32.10274390707676,0.0 35.20669940148689,32.10121469589495,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="85">
+            <name>Edge 6</name>
+            <styleUrl>#87</styleUrl>
+            <LineString id="84">
+                <coordinates>35.20669940148689,32.10121469589495,0.0 35.2070542637845,32.10077420780372,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="94">
+            <name>Edge 7</name>
+            <styleUrl>#96</styleUrl>
+            <LineString id="93">
+                <coordinates>35.2070542637845,32.10077420780372,0.0 35.20632008978085,32.10078395442473,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="103">
+            <name>Edge 8</name>
+            <styleUrl>#105</styleUrl>
+            <LineString id="102">
+                <coordinates>35.20632008978085,32.10078395442473,0.0 35.20346084759601,32.10197488595662,0.0</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="112">
+            <name>Edge 9</name>
+            <styleUrl>#114</styleUrl>
+            <LineString id="111">
+                <coordinates>35.20346084759601,32.10197488595662,0.0 35.20137240651047,32.10551419193057,0.0</coordinates>
             </LineString>
         </Placemark>
     </Document>
