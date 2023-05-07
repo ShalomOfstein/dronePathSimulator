@@ -39,12 +39,12 @@ def mykml(points,points1,edges):
  tour = kml.newgxtour(name="Play me!")
  playlist = tour.newgxplaylist()
 
- wait = playlist.newgxwait(gxduration=2.4)
+ wait = playlist.newgxwait(gxduration=1)
 
  animatedupdate = playlist.newgxanimatedupdate(gxduration=5)
  animatedupdate.update.change = simplekml.LineStyle(width=5, color='ff0000ff')
 
- wait = playlist.newgxwait(gxduration=2.4)
+ wait = playlist.newgxwait(gxduration=1)
 
  return kml
 
@@ -56,14 +56,14 @@ def mykml1(points,points1,edges):
 
     # Add the nodes to the KML file as placemarks
     for point in points1:
-        kml.newpoint(name=point, coords=[(point[1], point[0], point[2])])
+        kml.newpoint(name= "point"+{point}, coords=[(point[1], point[0], point[2])])
 
     # Create a tour and playlist
     tour = kml.newgxtour(name="Play me!")
     playlist = tour.newgxplaylist()
 
     # Add wait time before starting animation
-    playlist.newgxwait(gxduration=2)
+    playlist.newgxwait(gxduration=1)
    
     placemark = kml.newpoint(coords=[(edges[0][1],edges[0][0],edges[0][2])])
     placemark.altitudemode = simplekml.AltitudeMode.clamptoground
@@ -75,25 +75,33 @@ def mykml1(points,points1,edges):
         linestring = kml.newlinestring(name=f"Edge {i}")
         linestring.coords=[(edges[i][1],edges[i][0],edges[i][2]),(edges[i+1][1],edges[i+1][0],edges[i+1][2])]
         linestring.style.linestyle = simplekml.LineStyle(width=5, color='ff0000ff')
-        
+      
         # Create a flyto for each edge
         flyto = playlist.newgxflyto(gxduration=5)
         flyto.camera.longitude = (edges[i][1] + edges[i+1][1]) / 2
         flyto.camera.latitude = (float(edges[i][0]) + float(edges[i+1][0])) / 2
-        flyto.camera.altitude = 500
+        flyto.camera.altitude = 600
         flyto.camera.tilt = 0
         
        # Set new coordinates for placemark
         new_coords = [(edges[i+1][1]),( edges[i+1][0]), (edges[i+1][2])]
-    
-
+        dist= get_distance(edges[i][0],edges[i][1], edges[i+1][0],edges[i+1][1])
+        speed = dist*10
         # Create animated update to move placemark
-    
-        animatedupdate = playlist.newgxanimatedupdate(gxduration=2)
+        animatedupdate = playlist.newgxanimatedupdate(gxduration=speed)
         animatedupdate.update.change = f'<Point targetId="{placemark.id}"><coordinates>{new_coords[0]},{new_coords[1]},{new_coords[2]}</coordinates></Point>'
 
         # Add wait time before showing next edge
-        playlist.newgxwait(gxduration=2)
+        playlist.newgxwait(gxduration=1)
+
+    animatedupdate = playlist.newgxanimatedupdate(gxduration=8)
+    animatedupdate.update.change = f'<Point targetId="{placemark.id}"><coordinates>{edges[0][1]},{edges[0][0]},{edges[0][2]}</coordinates></Point>'
+    flyto = playlist.newgxflyto(gxduration=10)
+    flyto.camera.longitude = (edges[0][1]) 
+    flyto.camera.latitude = (edges[0][0])
+    flyto.camera.altitude = 1500
+    flyto.camera.tilt = 0
+
 
     return kml
 
@@ -146,7 +154,8 @@ nx.draw_networkx_nodes(G, pos, nodelist=points, node_color='b', node_size=80)
 nx.draw_networkx_labels(G, pos, font_size=8, font_family='sans-serif')
 plt.axis('off')
 
-# plt.show()
+
+plt.show()
 kml = mykml1(points,points1,edges)
 
 # Save the KML file

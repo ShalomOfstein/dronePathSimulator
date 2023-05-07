@@ -82,61 +82,61 @@
             </LineStyle>
         </Style>
         <Placemark id="3">
-            <name>(32.10551419193057, 35.20137240651047, 0.0)</name>
+            <name>point{point}</name>
             <Point id="2">
                 <coordinates>35.20137240651047,32.10551419193057,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="5">
-            <name>(32.10121469589495, 35.20669940148689, 0.0)</name>
+            <name>point{point}</name>
             <Point id="4">
                 <coordinates>35.20669940148689,32.10121469589495,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="7">
-            <name>(32.10651388018697, 35.20725367943773, 0.0)</name>
+            <name>point{point}</name>
             <Point id="6">
                 <coordinates>35.20725367943773,32.10651388018697,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="9">
-            <name>(32.10274390707676, 35.20956308269901, 0.0)</name>
+            <name>point{point}</name>
             <Point id="8">
                 <coordinates>35.20956308269901,32.10274390707676,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="11">
-            <name>(32.10197488595662, 35.20346084759601, 0.0)</name>
+            <name>point{point}</name>
             <Point id="10">
                 <coordinates>35.20346084759601,32.10197488595662,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="13">
-            <name>(32.10608412848192, 35.20622782436586, 0.0)</name>
+            <name>point{point}</name>
             <Point id="12">
                 <coordinates>35.20622782436586,32.10608412848192,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="15">
-            <name>(32.10530093874119, 35.20766732174338, 0.0)</name>
+            <name>point{point}</name>
             <Point id="14">
                 <coordinates>35.20766732174338,32.10530093874119,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="17">
-            <name>(32.10837637689895, 35.20802098837805, 0.0)</name>
+            <name>point{point}</name>
             <Point id="16">
                 <coordinates>35.20802098837805,32.10837637689895,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="19">
-            <name>(32.10077420780372, 35.2070542637845, 0.0)</name>
+            <name>point{point}</name>
             <Point id="18">
                 <coordinates>35.2070542637845,32.10077420780372,0.0</coordinates>
             </Point>
         </Placemark>
         <Placemark id="21">
-            <name>(32.10078395442473, 35.20632008978085, 0.0)</name>
+            <name>point{point}</name>
             <Point id="20">
                 <coordinates>35.20632008978085,32.10078395442473,0.0</coordinates>
             </Point>
@@ -145,19 +145,19 @@
             <name>Play me!</name>
             <gx:Playlist>
                 <gx:Wait id="24">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="34">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.20380011543817</longitude>
                         <latitude>32.105799160206246</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="36">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>4.618453024545336</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -168,19 +168,19 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="38">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="43">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.20674075190179</longitude>
                         <latitude>32.106299004334446</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="45">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1.0782902673190464</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -191,19 +191,19 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="47">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="52">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.20763733390789</longitude>
                         <latitude>32.10744512854296</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="54">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>2.1941703960379315</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -214,19 +214,19 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="56">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="61">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.20784415506071</longitude>
                         <latitude>32.10683865782007</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="63">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>3.4369956979786433</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -237,19 +237,19 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="65">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="70">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.208615202221196</longitude>
                         <latitude>32.10402242290897</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="72">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>3.358556989238389</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -260,19 +260,19 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="74">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="79">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.208131242092946</longitude>
                         <latitude>32.101979301485855</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="81">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>3.1896325912371513</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -283,19 +283,19 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="83">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="88">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.20687683263569</longitude>
                         <latitude>32.10099445184933</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="90">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>0.5931743651246908</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -306,19 +306,19 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="92">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="97">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.20668717678268</longitude>
                         <latitude>32.100779081114226</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="99">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>0.6918561868872362</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -329,19 +329,19 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="101">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="106">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.20489046868843</longitude>
                         <latitude>32.101379420190675</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="108">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>3.0021421617683335</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -352,19 +352,19 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="110">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
                 <gx:FlyTo id="115">
                     <gx:duration>5</gx:duration>
                     <Camera>
                         <longitude>35.20241662705324</longitude>
                         <latitude>32.103744538943594</latitude>
-                        <altitude>500</altitude>
+                        <altitude>600</altitude>
                         <tilt>0</tilt>
                     </Camera>
                 </gx:FlyTo>
                 <gx:AnimatedUpdate id="117">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>4.401156932580901</gx:duration>
                     <Update>
                         <targetHref/>
                         <Change>
@@ -375,8 +375,28 @@
                     </Update>
                 </gx:AnimatedUpdate>
                 <gx:Wait id="119">
-                    <gx:duration>2</gx:duration>
+                    <gx:duration>1</gx:duration>
                 </gx:Wait>
+                <gx:AnimatedUpdate id="120">
+                    <gx:duration>8</gx:duration>
+                    <Update>
+                        <targetHref/>
+                        <Change>
+                            <Point targetId="25">
+                                <coordinates>35.20137240651047,32.10551419193057,0.0</coordinates>
+                            </Point>
+                        </Change>
+                    </Update>
+                </gx:AnimatedUpdate>
+                <gx:FlyTo id="122">
+                    <gx:duration>10</gx:duration>
+                    <Camera>
+                        <longitude>35.20137240651047</longitude>
+                        <latitude>32.10551419193057</latitude>
+                        <altitude>1500</altitude>
+                        <tilt>0</tilt>
+                    </Camera>
+                </gx:FlyTo>
             </gx:Playlist>
         </gx:Tour>
         <Placemark id="26">
